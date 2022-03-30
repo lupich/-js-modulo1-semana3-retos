@@ -1,0 +1,102 @@
+//variables
+$lado-figura:150px;
+
+body{
+  
+   /*  height: 100vh; */
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-right: $lado-figura solid transparent;
+    border-top: $lado-figura solid transparent;
+    border-left: ($lado-figura - 60px) solid transparent;
+    border-bottom: $lado-figura solid #f0ad4e;
+    margin-top: -$lado-figura;
+}
+.square,.circle{
+    width: $lado-figura;
+    height: $lado-figura;
+    background-color: #f0ad4e;
+}
+.circle{
+    border-radius: 50%;
+}
+
+.oculto{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.section{
+    display: flex;
+    align-items: center;
+//border: 1px solid #ccc;
+  // padding: 20px 100px; 
+    
+}
+figure{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#calcular,.calcular{
+    box-sizing: border-box;
+   
+    padding: 0.8em 1.6em;
+    background-color: #000;
+    color:#fff;
+    border-radius: 15px;
+    border: none;
+    
+    &:hover:not([disabled]){  
+        cursor: pointer; 
+        color: #fff;
+        background-color: #E67400;
+    }
+    &:disabled{
+        cursor: no-drop;
+        opacity: 0.4;
+    }
+}
+select{
+    padding: 0.4em 1.2em;
+}
+input{
+width: 50px;
+}
+.area{
+    margin-top: 20px;
+}
+.mensaje__vacio{
+    color: red;
+    font-weight: 700;
+}
+@media only screen and (max-width:610px) {
+    .section{
+
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .form{
+        
+    display: flex;
+    flex-direction: column;
+
+    }
+    label{
+        display: inline-block;
+        margin-right:20px!important;
+    }
+    
+}

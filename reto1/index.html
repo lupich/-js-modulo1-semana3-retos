@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora fig. geometricas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="taller1">TALLER 1</h2>
+    <section class="section">
+       
+        <div class="operation__section">
+                <form action=""class="form">
+                   
+                   <p class="form__content">
+                    <label for="form__options">Figura Geometrica:</label>
+                        <select name="" id="form__options" >
+                        <option value="Selecionar"selected>Seleccionar</option>
+                        <option value="Cuadrado">Cuadrado</option>
+                        <option value="Triangulo" >Triangulo</option>
+                        <option value="Circulo">Circulo</option>
+                        </select>
+                   </p>
+                   <p  class="form__content oculto datos__calulo">
+                        <label for="dato1"></label>
+                        <input type="number" min=1 name="" id="dato1">
+                        <span class="otro__dato oculto">
+                            <label for="dato2">Haltura</label>
+                            <input type="number" min=1 name="" id="dato2">
+                        </span>
+                        
+                   </p>
+                    <button type="button" id="calcular" class="calcular" disabled> Calcular área</button>
+                </form>
+        </div>
+        <div class="geometric__section">
+            <figure>
+                <div class="geometric__figure"></div>
+                <figcaptionfi class="area"></figcaption>
+            </figure>
+            
+        </div>
+    </section>
+   
+    <h2 class="taller1">RETO 1</h2>
+    <section class="isosceles">
+    <p class="isosceles__enunciado">Ingresar los lados de un trinagunlo si es isosceles hallar su altura</p>
+        <form action="">
+            <p class="datos__calulo">
+                <label for=""> a</label>
+                <input type="number" min=1 name="" id="la">
+                <label for="">b</label>
+                <input type="number" min=1 name="" id="lb">
+                <label for="">c</label>
+                <input type="number" min=1 name="" id="lc">
+            </p>
+            <p id="resultado__altura">
+
+            </p>
+            <button type="button" id="botontriangulo" disabled class="calcular">Calcular altura</button>
+        </form>
+    </section>
+    
+
+    <script src="js/js.js"></script>
+
+
+    
+</body>
+
+
+
+</html>

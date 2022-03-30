@@ -1,0 +1,99 @@
+body {
+  /*  height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-top: 150px solid transparent;
+  border-left: 90px solid transparent;
+  border-bottom: 150px solid #f0ad4e;
+  margin-top: -150px;
+}
+
+.square, .circle {
+  width: 150px;
+  height: 150px;
+  background-color: #f0ad4e;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.oculto {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calcular, .calcular {
+  box-sizing: border-box;
+  padding: 0.8em 1.6em;
+  background-color: #000;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+}
+#calcular:hover:not([disabled]), .calcular:hover:not([disabled]) {
+  cursor: pointer;
+  color: #fff;
+  background-color: #E67400;
+}
+#calcular:disabled, .calcular:disabled {
+  cursor: no-drop;
+  opacity: 0.4;
+}
+
+select {
+  padding: 0.4em 1.2em;
+}
+
+input {
+  width: 50px;
+}
+
+.area {
+  margin-top: 20px;
+}
+
+.mensaje__vacio {
+  color: red;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 610px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    display: inline-block;
+    margin-right: 20px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
